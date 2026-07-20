@@ -1,0 +1,142 @@
+.app-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: #0f172a;
+}
+
+header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  color: #475569;
+  margin: 0;
+}
+
+.todo-form {
+  margin-top: 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.todo-form form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5f5;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+.todo-form button {
+  padding: 0.75rem 1.2rem;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.todo-form button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.status.info {
+  color: #0f172a;
+}
+
+.status.success {
+  color: #15803d;
+}
+
+.status.error {
+  color: #b91c1c;
+}
+
+.todo-list {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.todo-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list .text {
+  flex: 1;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.todo-list li.completed .text {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.todo-list .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-list button {
+  border: 1px solid #cbd5f5;
+  border-radius: 999px;
+  background: white;
+  color: #0f172a;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.todo-list button:hover:not(:disabled) {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.todo-list button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.empty-state {
+  text-align: center;
+  color: #64748b;
+  padding: 1.5rem 0;
+}
